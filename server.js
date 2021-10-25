@@ -7,7 +7,7 @@ const path = require('path');
 app.use(express.urlencoded({ extended: true }));
 // parse incoming JSON data
 app.use(express.json());
-const { animals } = require('./zookeeper/data/animals.json');
+const { animals } = require('./data/animals.json');
 
 app.listen(PORT, () => {
   console.log(`API server now on port ${PORT}!`);
@@ -60,7 +60,7 @@ function createNewAnimal(body, animalsArray) {
   const animal = body;
   animalsArray.push(animal);
   fs.writeFileSync(
-    path.join(__dirname, './zookeeper/data/animals.json'),
+    path.join(__dirname, './data/animals.json'),
     JSON.stringify({ animals: animalsArray }, null, 2)
   );
   return animal;
