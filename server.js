@@ -6,7 +6,6 @@ const { animals } = require('./zookeeper/data/animals.json');
 app.listen(PORT, () => {
   console.log(`API server now on port ${PORT}!`);
 });
-
   function filterByQuery(query, animalsArray) {
     let personalityTraitsArray = [];
     // Note that we save the animalsArray as filteredResults here:
