@@ -123,6 +123,7 @@ app.get('/zookeepers', (req, res) => {
   res.sendFile(path.join(__dirname, './public/zookeepers.html'));
 });
 
+// wildcard route must always come last
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, './public/index.html'));
 });

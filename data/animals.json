@@ -126,6 +126,22 @@
         "loving"
       ],
       "id": "12"
+    },
+    {
+      "name": "rob",
+      "species": "lizzard",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "13"
+    },
+    {
+      "name": "steve",
+      "species": "sheep",
+      "diet": "herbivore",
+      "personalityTraits": [],
+      "id": "14"
     }
   ]
 }
