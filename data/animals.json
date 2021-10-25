@@ -142,6 +142,15 @@
       "diet": "herbivore",
       "personalityTraits": [],
       "id": "14"
+    },
+    {
+      "name": "reggie",
+      "species": "cat",
+      "diet": "omnivore",
+      "personalityTraits": [
+        "zany"
+      ],
+      "id": "15"
     }
   ]
 }
